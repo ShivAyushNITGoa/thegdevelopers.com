@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GDevelopers - Blog</title>
+    <meta name="description" content="Insights, tutorials, and updates from The GDevelopers team">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html">Projects</a></li>
+                    <li><a href="../blog/index.html" class="active">Blog</a></li>
+                    <li><a href="../team/index.html">Team</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact Us</a></li>
+                    <li>
+                        <button id="search-toggle" class="search-toggle" aria-label="Search website">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our <span class="highlight">Blog</span></h1>
+            <p>Insights, tutorials, and updates from our development team</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-list">
+                <a href="#" class="category-tag active">All Posts</a>
+                <a href="#" class="category-tag">Web Development</a>
+                <a href="#" class="category-tag">Mobile Apps</a>
+                <a href="#" class="category-tag">Backend</a>
+                <a href="#" class="category-tag">DevOps</a>
+                <a href="#" class="category-tag">Design</a>
+                <a href="#" class="category-tag">Career</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-post-card">
+                <div class="featured-post-image">
+                    <img src="../assets/images/blog-placeholder-large.svg" alt="Featured post">
+                    <div class="featured-tag">Featured</div>
+                </div>
+                <div class="featured-post-content">
+                    <div class="blog-meta">
+                        <span class="date">June 15, 2023</span>
+                        <span class="author">Ayush Kumar</span>
+                        <span class="category">Web Development</span>
+                    </div>
+                    <h2>The Future of Web Development in 2023</h2>
+                    <p>The web development landscape is constantly evolving with new frameworks, libraries, and methodologies. In this comprehensive guide, we explore the most significant trends that will shape web development in 2023 and beyond, including serverless architectures, WebAssembly, and progressive web applications.</p>
+                    <a href="post1.html" class="btn-primary">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 2">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">May 28, 2023</span>
+                            <span class="author">Chanchal Saini</span>
+                        </div>
+                        <h3>Building Scalable APIs with Node.js</h3>
+                        <p>Best practices and architecture patterns for building robust and scalable APIs that can handle high traffic loads and complex business logic.</p>
+                        <a href="post2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 3">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">May 10, 2023</span>
+                            <span class="author">Ayush Kumar</span>
+                        </div>
+                        <h3>Optimizing React Applications for Performance</h3>
+                        <p>Techniques and tools to improve the performance of your React applications, from code splitting to memoization and efficient state management.</p>
+                        <a href="post3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 4">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">April 22, 2023</span>
+                            <span class="author">Chanchal Saini</span>
+                        </div>
+                        <h3>Introduction to Serverless Architecture</h3>
+                        <p>Understanding the benefits and challenges of serverless architecture and how to leverage it for your next project.</p>
+                        <a href="post4.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 5">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">April 5, 2023</span>
+                            <span class="author">Ayush Kumar</span>
+                        </div>
+                        <h3>UI/UX Design Trends for Developers</h3>
+                        <p>The latest design trends that developers should know about to create modern and engaging user interfaces.</p>
+                        <a href="post5.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 6">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">March 18, 2023</span>
+                            <span class="author">Chanchal Saini</span>
+                        </div>
+                        <h3>Database Optimization Techniques</h3>
+                        <p>Practical strategies to optimize database performance for high-traffic applications and complex data models.</p>
+                        <a href="post6.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="../assets/images/blog-placeholder.svg" alt="Blog post 7">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">March 3, 2023</span>
+                            <span class="author">Ayush Kumar</span>
+                        </div>
+                        <h3>Getting Started with TypeScript</h3>
+                        <p>A beginner's guide to TypeScript, explaining how it improves developer productivity and code quality.</p>
+                        <a href="post7.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <span class="dots">...</span>
+                <a href="#" class="page">8</a>
+                <a href="#" class="page next">
+                    Next <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest projects, blog posts, and community events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <span class="highlight">The</span> GDevelopers
+                    </a>
+                    <p>Building the future through innovative software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../projects/index.html">Projects</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../team/index.html">Team</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Backend Solutions</a></li>
+                            <li><a href="#">Cloud Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The GDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <button id="search-close" class="search-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Search The GDevelopers</h2>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" class="search-input" placeholder="Type to search..." autocomplete="off">
+                <button type="submit" class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="search.js"></script>
+    <script src="../assets/js/newsletter.js"></script>
+</body>
+</html> 

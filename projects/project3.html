@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect - The GDevelopers</title>
+    <meta name="description" content="DevConnect - A collaboration tool for developers with real-time code sharing and communication features">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html" class="active">Projects</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="../team/index.html">Team</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact Us</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Dev<span class="highlight">Connect</span></h1>
+            <p>A collaboration tool for developers with real-time code sharing and communication features</p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="project-overview-grid">
+                <div class="project-overview-content">
+                    <h2>Project <span class="highlight">Overview</span></h2>
+                    <p>DevConnect is an innovative collaboration platform designed specifically for development teams to streamline communication, share code in real-time, and enhance productivity throughout the software development lifecycle.</p>
+                    
+                    <p>The platform integrates seamlessly with popular development tools and version control systems, providing a unified workspace where developers can collaborate effectively regardless of their physical location.</p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5k+</span>
+                            <span class="stat-label">Active Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Dev Teams</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">35%</span>
+                            <span class="stat-label">Productivity Boost</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tags">
+                        <span>SaaS</span>
+                        <span>Collaboration</span>
+                        <span>Real-time</span>
+                        <span>Development Tools</span>
+                    </div>
+                </div>
+                <div class="project-overview-image">
+                    <img src="../assets/images/project-placeholder-large.svg" alt="DevConnect Platform">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Features -->
+    <section class="project-features">
+        <div class="container">
+            <h2 class="section-title">Key <span class="highlight">Features</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Real-time Code Collaboration</h3>
+                    <p>Edit code simultaneously with team members with live cursors, syntax highlighting, and instant updates across all connected users.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Integrated Communication</h3>
+                    <p>Chat, voice, and video communication tools built directly into the development environment for seamless teamwork.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Version Control Integration</h3>
+                    <p>Seamless integration with Git, GitHub, GitLab, and Bitbucket for streamlined code management and collaboration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Built-in task tracking, sprint planning, and agile workflow tools to keep development projects organized.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Shared Terminal</h3>
+                    <p>Collaborative command-line interface allowing team members to execute commands and view outputs together.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Debugging Tools</h3>
+                    <p>Collaborative debugging features that allow multiple developers to trace issues and fix bugs together in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology <span class="highlight">Stack</span></h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Frontend user interface development</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend server environment</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <p>Containerization for consistent environments</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>WebSockets</h3>
+                    <p>Real-time communication protocol</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for flexible data storage</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Auth0</h3>
+                    <p>Authentication and authorization services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Project <span class="highlight">Gallery</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="DevConnect Code Editor">
+                    <div class="gallery-caption">Collaborative code editor with multiple cursors</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="DevConnect Communication">
+                    <div class="gallery-caption">Integrated team communication interface</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="DevConnect Project Management">
+                    <div class="gallery-caption">Project management and task tracking dashboard</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="DevConnect Mobile View">
+                    <div class="gallery-caption">Mobile companion app for on-the-go collaboration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Results -->
+    <section class="project-results">
+        <div class="container">
+            <h2 class="section-title">Project <span class="highlight">Results</span></h2>
+            <div class="results-content">
+                <p>DevConnect has transformed how development teams collaborate, with measurable improvements in productivity and code quality:</p>
+                
+                <ul class="results-list">
+                    <li>35% average increase in development team productivity</li>
+                    <li>50% reduction in time spent on communication about code-related issues</li>
+                    <li>28% faster onboarding for new team members</li>
+                    <li>40% decrease in bugs found in production due to improved collaborative code reviews</li>
+                    <li>Successful adoption by over 200 development teams across various industries</li>
+                </ul>
+                
+                <blockquote class="testimonial">
+                    <p>"DevConnect has revolutionized how our distributed development team works together. The real-time collaboration features have eliminated the friction we used to experience when working across different time zones and locations."</p>
+                    <cite>— CTO, Tech Startup</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                    <p>Building the future through innovative software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../projects/index.html">Projects</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../team/index.html">Team</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Backend Solutions</a></li>
+                            <li><a href="#">Cloud Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The GDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 

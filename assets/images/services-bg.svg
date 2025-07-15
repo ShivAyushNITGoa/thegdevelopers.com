@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient Definitions -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Blob Filter -->
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+    </filter>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="1000" height="600" fill="white" />
+  
+  <!-- Background Shapes -->
+  <g opacity="0.3" filter="url(#goo)">
+    <!-- Animated Blobs -->
+    <circle cx="200" cy="100" r="80" fill="url(#grad1)">
+      <animate attributeName="cy" values="100;130;100" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="200;220;200" dur="20s" repeatCount="indefinite" />
+      <animate attributeName="r" values="80;90;80" dur="10s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="800" cy="150" r="100" fill="url(#grad1)">
+      <animate attributeName="cy" values="150;180;150" dur="18s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="800;780;800" dur="25s" repeatCount="indefinite" />
+      <animate attributeName="r" values="100;120;100" dur="12s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="300" cy="450" r="120" fill="url(#grad1)">
+      <animate attributeName="cy" values="450;420;450" dur="22s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="300;320;300" dur="17s" repeatCount="indefinite" />
+      <animate attributeName="r" values="120;140;120" dur="14s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="750" cy="500" r="90" fill="url(#grad1)">
+      <animate attributeName="cy" values="500;470;500" dur="20s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="750;730;750" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="r" values="90;110;90" dur="13s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Grid Pattern -->
+  <g stroke="#4f46e5" stroke-width="0.5" opacity="0.15">
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="50" x2="1000" y2="50" />
+    <line x1="0" y1="150" x2="1000" y2="150" />
+    <line x1="0" y1="250" x2="1000" y2="250" />
+    <line x1="0" y1="350" x2="1000" y2="350" />
+    <line x1="0" y1="450" x2="1000" y2="450" />
+    <line x1="0" y1="550" x2="1000" y2="550" />
+    
+    <!-- Vertical Lines -->
+    <line x1="50" y1="0" x2="50" y2="600" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="250" y1="0" x2="250" y2="600" />
+    <line x1="350" y1="0" x2="350" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+    <line x1="550" y1="0" x2="550" y2="600" />
+    <line x1="650" y1="0" x2="650" y2="600" />
+    <line x1="750" y1="0" x2="750" y2="600" />
+    <line x1="850" y1="0" x2="850" y2="600" />
+    <line x1="950" y1="0" x2="950" y2="600" />
+  </g>
+  
+  <!-- Floating Icons -->
+  <g>
+    <!-- Mobile Icon -->
+    <g transform="translate(100, 200)" opacity="0.7">
+      <rect x="0" y="0" width="24" height="40" rx="3" stroke="#4f46e5" stroke-width="2" fill="none" />
+      <line x1="9" y1="6" x2="15" y2="6" stroke="#4f46e5" stroke-width="2" />
+      <circle cx="12" cy="32" r="2" fill="#4f46e5" />
+      <animateTransform attributeName="transform" type="translate" from="100,200" to="120,200" dur="8s" repeatCount="indefinite" additive="sum" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="8s" repeatCount="indefinite" />
+    </g>
+    
+    <!-- Web Icon -->
+    <g transform="translate(800, 250)" opacity="0.7">
+      <circle cx="20" cy="20" r="18" stroke="#10b981" stroke-width="2" fill="none" />
+      <path d="M2,20 h36 M20,2 v36 M8,10 C8,10 16,30 32,10 M32,30 C32,30 16,10 8,30" stroke="#10b981" stroke-width="1.5" fill="none" />
+      <animateTransform attributeName="transform" type="translate" from="800,250" to="780,250" dur="9s" repeatCount="indefinite" additive="sum" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="9s" repeatCount="indefinite" />
+    </g>
+    
+    <!-- Cloud/Server Icon -->
+    <g transform="translate(600, 150)" opacity="0.7">
+      <path d="M10,20 C10,13 15,8 22,8 C29,8 34,13 34,20 C34,27 29,32 22,32 C15,32 10,27 10,20 Z" stroke="#8b5cf6" stroke-width="2" fill="none" />
+      <line x1="22" y1="15" x2="22" y2="25" stroke="#8b5cf6" stroke-width="2" />
+      <line x1="17" y1="20" x2="27" y2="20" stroke="#8b5cf6" stroke-width="2" />
+      <animateTransform attributeName="transform" type="translate" from="600,150" to="610,140" dur="7s" repeatCount="indefinite" additive="sum" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite" />
+    </g>
+    
+    <!-- Database Icon -->
+    <g transform="translate(400, 400)" opacity="0.7">
+      <path d="M12,10 C12,5 17,1 22,1 C27,1 32,5 32,10 C32,15 27,19 22,19 C17,19 12,15 12,10 Z" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M12,10 L12,30 C12,35 17,39 22,39 C27,39 32,35 32,30 L32,10" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <line x1="12" y1="20" x2="32" y2="20" stroke="#60a5fa" stroke-width="1" />
+      <animateTransform attributeName="transform" type="translate" from="400,400" to="410,410" dur="10s" repeatCount="indefinite" additive="sum" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="10s" repeatCount="indefinite" />
+    </g>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g stroke-dasharray="4,4" opacity="0.4">
+    <path d="M140,220 C240,260 360,200 410,420" stroke="#4f46e5" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dashoffset" from="0" to="32" dur="12s" repeatCount="indefinite" />
+    </path>
+    <path d="M410,420 C500,450 700,330 620,170" stroke="#10b981" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dashoffset" from="0" to="32" dur="10s" repeatCount="indefinite" />
+    </path>
+    <path d="M620,170 C680,120 730,200 800,270" stroke="#8b5cf6" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dashoffset" from="0" to="32" dur="8s" repeatCount="indefinite" />
+    </path>
+    <path d="M800,270 C700,400 300,450 140,220" stroke="#60a5fa" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dashoffset" from="0" to="32" dur="15s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Particles -->
+  <g>
+    <circle cx="140" cy="220" r="3" fill="#4f46e5">
+      <animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="410" cy="420" r="3" fill="#60a5fa">
+      <animate attributeName="r" values="3;5;3" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="620" cy="170" r="3" fill="#8b5cf6">
+      <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="270" r="3" fill="#10b981">
+      <animate attributeName="r" values="3;5;3" dur="6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg> 

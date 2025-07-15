@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHealth App - The GDevelopers</title>
+    <meta name="description" content="SmartHealth App - A health monitoring application with AI-driven insights">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html" class="active">Projects</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="../team/index.html">Team</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact Us</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Smart<span class="highlight">Health</span> App</h1>
+            <p>A health monitoring application with AI-driven insights and personalized recommendations</p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="project-overview-grid">
+                <div class="project-overview-content">
+                    <h2>Project <span class="highlight">Overview</span></h2>
+                    <p>SmartHealth App is a comprehensive health monitoring platform designed to help users track their vital health metrics, analyze patterns, and receive personalized recommendations to improve their overall wellbeing.</p>
+                    
+                    <p>The application leverages artificial intelligence to provide actionable insights based on user data, helping them make informed decisions about their health and lifestyle choices.</p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">Active Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">App Store Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Health Metrics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tags">
+                        <span>Mobile</span>
+                        <span>AI</span>
+                        <span>Healthcare</span>
+                        <span>React Native</span>
+                    </div>
+                </div>
+                <div class="project-overview-image">
+                    <img src="../assets/images/project-placeholder-large.svg" alt="SmartHealth App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Features -->
+    <section class="project-features">
+        <div class="container">
+            <h2 class="section-title">Key <span class="highlight">Features</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Track vital health metrics including heart rate, sleep quality, activity levels, and more through seamless integration with wearable devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Insights</h3>
+                    <p>Receive personalized health insights and recommendations based on your data patterns, helping you make informed lifestyle choices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get timely reminders for medications, exercise, and other health-related activities tailored to your schedule and preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Visualize your health journey with intuitive charts and graphs that show your progress over time and help identify trends.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Data Storage</h3>
+                    <p>Your health data is protected with enterprise-grade encryption and HIPAA-compliant security measures to ensure privacy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Connect with like-minded individuals on similar health journeys to share experiences and motivate each other.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology <span class="highlight">Stack</span></h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React Native</h3>
+                    <p>Cross-platform mobile framework for iOS and Android development</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend server environment for API development</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for flexible data storage</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <p>Cloud infrastructure for scalable deployment</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>TensorFlow</h3>
+                    <p>Machine learning framework for health insights</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Auth0</h3>
+                    <p>Authentication and authorization services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Project <span class="highlight">Gallery</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="SmartHealth Dashboard">
+                    <div class="gallery-overlay">
+                        <h3>Dashboard View</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="Health Metrics">
+                    <div class="gallery-overlay">
+                        <h3>Health Metrics</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="AI Recommendations">
+                    <div class="gallery-overlay">
+                        <h3>AI Recommendations</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/project-placeholder.svg" alt="User Profile">
+                    <div class="gallery-overlay">
+                        <h3>User Profile</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Results -->
+    <section class="project-results">
+        <div class="container">
+            <h2 class="section-title">Results & <span class="highlight">Impact</span></h2>
+            <div class="results-content">
+                <p>Since its launch, SmartHealth App has made a significant impact in the healthcare technology space:</p>
+                <ul class="results-list">
+                    <li><strong>User Engagement:</strong> 85% of users actively engage with the app at least 3 times per week</li>
+                    <li><strong>Health Improvements:</strong> Users report an average 27% improvement in their health metrics after 3 months</li>
+                    <li><strong>Industry Recognition:</strong> Recipient of the 2023 Health Tech Innovation Award</li>
+                    <li><strong>Partnerships:</strong> Integrated with 5 major health insurance providers to offer premium discounts for active users</li>
+                </ul>
+                <div class="testimonial">
+                    <p>"SmartHealth App has transformed how I manage my health. The personalized insights have helped me make meaningful lifestyle changes that have improved my overall wellbeing."</p>
+                    <div class="testimonial-author">
+                        <span>Sarah Johnson</span>
+                        <span>SmartHealth App User</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in a similar <span class="highlight">solution</span>?</h2>
+                <p>Let's discuss how we can create a custom health tech solution tailored to your specific needs.</p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn-primary">Contact Us</a>
+                    <a href="#" class="btn-secondary">Download Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+        <div class="container">
+            <h2 class="section-title">Related <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="EcoTrack Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoTrack Platform</h3>
+                        <p>A sustainability platform that helps organizations track and reduce their environmental impact.</p>
+                        <div class="project-tags">
+                            <span>Web</span>
+                            <span>Dashboard</span>
+                            <span>Environment</span>
+                        </div>
+                        <a href="project2.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="DevConnect">
+                    </div>
+                    <div class="project-info">
+                        <h3>DevConnect</h3>
+                        <p>A collaboration tool for developers with real-time code sharing and communication features.</p>
+                        <div class="project-tags">
+                            <span>SaaS</span>
+                            <span>Collaboration</span>
+                            <span>Real-time</span>
+                        </div>
+                        <a href="project3.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                    <p>Building the future through innovative software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../projects/index.html">Projects</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../team/index.html">Team</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Backend Solutions</a></li>
+                            <li><a href="#">Cloud Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The GDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 

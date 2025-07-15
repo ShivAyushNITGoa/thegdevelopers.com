@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GDevelopers</title>
+    <meta name="description" content="The GDevelopers - A community of innovative developers sharing projects and insights">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects/index.html">Projects</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="team/index.html">Team</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+                    <li>
+                        <button id="search-toggle" class="search-toggle" aria-label="Search website">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particles-canvas" class="particles-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Innovation Begins with <span class="highlight">Collaboration</span></h1>
+                <p>Welcome to The GDevelopers community - where developers share ideas, showcase projects, and build the future together.</p>
+                <div class="cta-buttons">
+                    <a href="projects/index.html" class="btn-primary">Explore Projects</a>
+                    <a href="blog/index.html" class="btn-secondary">Read Our Blog</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="blob-animation"></div>
+                <img src="assets/images/hero-image.svg" alt="Developers collaborating" class="floating">
+                <div class="tech-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Who We <span class="highlight">Are</span></h2>
+                <p>A community-driven development team passionate about technology and innovation</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card enhanced-hover scroll-reveal">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Expert Developers</h3>
+                    <p>Our team consists of skilled developers with expertise in various domains of software development.</p>
+                </div>
+                <div class="about-card enhanced-hover scroll-reveal">
+                    <div class="icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovative Solutions</h3>
+                    <p>We create cutting-edge solutions that solve real-world problems using modern technologies.</p>
+                </div>
+                <div class="about-card enhanced-hover scroll-reveal">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Focus</h3>
+                    <p>We believe in the power of community and collaboration to drive meaningful development.</p>
+                </div>
+                <div class="about-card enhanced-hover scroll-reveal">
+                    <div class="icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Future Ready</h3>
+                    <p>Always looking ahead, we stay on top of emerging technologies and industry trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-bg">
+            <img src="assets/images/services-bg.svg" alt="Services background" class="services-bg-image">
+        </div>
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Our <span class="highlight">Services</span></h2>
+                <p>Comprehensive software development services tailored to your needs</p>
+            </div>
+            <div class="services-wrapper">
+                <div class="service-card enhanced-hover scroll-reveal">
+                    <div class="service-icon">
+                        <img src="assets/images/mobile-dev.svg" alt="Mobile App Development" class="service-icon-image">
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android with modern design principles.</p>
+                </div>
+                <div class="service-card enhanced-hover scroll-reveal">
+                                          <div class="service-icon">
+                         <img src="assets/images/web-dev.svg" alt="Web Development" class="service-icon-image">
+                      </div>
+                      <h3>Web Development</h3>
+                    <p>Responsive, user-friendly websites and web applications built with cutting-edge technologies.</p>
+                </div>
+                <div class="service-card enhanced-hover scroll-reveal">
+                    <div class="service-icon">
+                        <img src="assets/images/backend-dev.svg" alt="Backend Solutions" class="service-icon-image">
+                    </div>
+                    <h3>Backend Solutions</h3>
+                    <p>Scalable server-side applications, APIs, and database solutions to power your products.</p>
+                </div>
+                <div class="service-card enhanced-hover scroll-reveal">
+                    <div class="service-icon">
+                        <img src="assets/images/cloud-services.svg" alt="Cloud Services" class="service-icon-image">
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Cloud-native applications and infrastructure management for optimal performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects" id="projects">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <p>Explore some of our latest work and innovations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card enhanced-hover scroll-reveal">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.svg" alt="SmartHealth App">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <i class="fab fa-react"></i>
+                                <i class="fab fa-swift"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SmartHealth App</h3>
+                        <p>A health monitoring application with AI-driven insights and personalized recommendations.</p>
+                        <div class="project-tags">
+                            <span>Mobile</span>
+                            <span>AI</span>
+                            <span>Healthcare</span>
+                        </div>
+                        <a href="projects/project1.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card enhanced-hover scroll-reveal">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.svg" alt="EcoTrack Platform">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <i class="fab fa-js"></i>
+                                <i class="fab fa-node-js"></i>
+                                <i class="fab fa-aws"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoTrack Platform</h3>
+                        <p>A sustainability platform that helps organizations track and reduce their environmental impact.</p>
+                        <div class="project-tags">
+                            <span>Web</span>
+                            <span>Dashboard</span>
+                            <span>Environment</span>
+                        </div>
+                        <a href="projects/project2.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card enhanced-hover scroll-reveal">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.svg" alt="DevConnect">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <i class="fab fa-react"></i>
+                                <i class="fab fa-node-js"></i>
+                                <i class="fab fa-docker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DevConnect</h3>
+                        <p>A collaboration tool for developers with real-time code sharing and communication features.</p>
+                        <div class="project-tags">
+                            <span>SaaS</span>
+                            <span>Collaboration</span>
+                            <span>Real-time</span>
+                        </div>
+                        <a href="projects/project3.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center scroll-reveal">
+                <a href="projects/index.html" class="btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Latest <span class="highlight">Blog Posts</span></h2>
+                <p>Insights, tutorials, and updates from our team</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card enhanced-hover scroll-reveal">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-placeholder.svg" alt="Blog post 1">
+                        <div class="blog-badge">Featured</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">June 15, 2023</span>
+                            <span class="author">Ayush Kumar</span>
+                            <span class="category">Web</span>
+                        </div>
+                        <h3>The Future of Web Development in 2023</h3>
+                        <p>Exploring emerging trends and technologies shaping the future of web development...</p>
+                        <a href="blog/post1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card enhanced-hover scroll-reveal">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-placeholder.svg" alt="Blog post 2">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">May 28, 2023</span>
+                            <span class="author">Chanchal Saini</span>
+                            <span class="category">Backend</span>
+                        </div>
+                        <h3>Building Scalable APIs with Node.js</h3>
+                        <p>Best practices and architecture patterns for building robust and scalable APIs...</p>
+                        <a href="blog/post2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card enhanced-hover scroll-reveal">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-placeholder.svg" alt="Blog post 3">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">May 10, 2023</span>
+                            <span class="author">Ayush Kumar</span>
+                            <span class="category">React</span>
+                        </div>
+                        <h3>Optimizing React Applications for Performance</h3>
+                        <p>Techniques and tools to improve the performance of your React applications...</p>
+                        <a href="blog/post3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center scroll-reveal">
+                <a href="blog/index.html" class="btn-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Meet Our <span class="highlight">Team</span></h2>
+                <p>The talented individuals behind The GDevelopers</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member featured enhanced-hover scroll-reveal">
+                    <div class="member-image">
+                        <img src="assets/images/ayush.svg" alt="Ayush Kumar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ayush Kumar</h3>
+                        <p class="position">Founder & Lead Developer</p>
+                        <p class="bio">Passionate about creating innovative solutions and building strong developer communities.</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member featured enhanced-hover scroll-reveal">
+                    <div class="member-image">
+                        <img src="assets/images/chanchal.svg" alt="Chanchal Saini">
+                    </div>
+                    <div class="member-info">
+                        <h3>Chanchal Saini</h3>
+                        <p class="position">Partner & Senior Developer</p>
+                        <p class="bio">Expert in backend development and database optimization with a focus on scalable systems.</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center scroll-reveal">
+                <a href="team/index.html" class="btn-secondary">Meet The Entire Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Client <span class="highlight">Testimonials</span></h2>
+                <p>What our clients say about working with us</p>
+            </div>
+            <div class="testimonial-slider scroll-reveal">
+                <div class="testimonial-slide active">
+                    <div class="quote">
+                        <p>"The GDevelopers team delivered an exceptional product that exceeded our expectations. Their technical expertise and attention to detail made all the difference in our project's success."</p>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/client-placeholder.svg" alt="Client 1">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="quote">
+                        <p>"Working with The GDevelopers was a seamless experience from start to finish. They understood our requirements perfectly and delivered a solution that has significantly improved our business operations."</p>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/client-placeholder.svg" alt="Client 2">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>CTO, Innovate Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="quote">
+                        <p>"The mobile application developed by The GDevelopers has received outstanding feedback from our users. Their team's responsiveness and commitment to quality made them the perfect partner for our project."</p>
+                    </div>
+                    <div class="client-info">
+                        <img src="assets/images/client-placeholder.svg" alt="Client 3">
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>Product Manager, HealthTech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p>Have a project in mind or want to join our community? Reach out to us!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card enhanced-hover scroll-reveal">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Location</h3>
+                            <p>123 Innovation Street, Tech Valley</p>
+                        </div>
+                    </div>
+                    <div class="contact-card enhanced-hover scroll-reveal">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>info@thegdevelopers.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card enhanced-hover scroll-reveal">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="social-media enhanced-hover scroll-reveal">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container enhanced-hover scroll-reveal">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content enhanced-hover scroll-reveal">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest projects, blog posts, and community events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content enhanced-hover scroll-reveal">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="highlight">The</span> GDevelopers
+                    </a>
+                    <p>Building the future through innovative software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column enhanced-hover scroll-reveal">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects/index.html">Projects</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                            <li><a href="team/index.html">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column enhanced-hover scroll-reveal">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Backend Solutions</a></li>
+                            <li><a href="#">Cloud Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column enhanced-hover scroll-reveal">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom enhanced-hover">
+                <p>&copy; 2025 The GDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></a>
+    
+    <!-- Floating Action Button Menu -->
+    <div class="fab-container">
+        <div class="fab-main" id="fab-toggle">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="fab-options">
+            <a href="#contact" class="fab-option">
+                <i class="fas fa-envelope"></i>
+                <span class="fab-tooltip">Contact</span>
+            </a>
+            <a href="#projects" class="fab-option">
+                <i class="fas fa-project-diagram"></i>
+                <span class="fab-tooltip">Projects</span>
+            </a>
+            <a href="#services" class="fab-option">
+                <i class="fas fa-cogs"></i>
+                <span class="fab-tooltip">Services</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <button id="search-close" class="search-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Search The GDevelopers</h2>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" class="search-input" placeholder="Type to search..." autocomplete="off">
+                <button type="submit" class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/newsletter.js"></script>
+</body>
+</html> 

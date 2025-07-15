@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="60" fill="#8b5cf6" opacity="0.1" />
+  
+  <!-- Server Stack -->
+  <g>
+    <!-- Server 1 -->
+    <rect x="35" y="25" width="50" height="15" rx="3" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" />
+    <circle cx="42" cy="32.5" r="2.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <rect x="48" y="31" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="62" y="31" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="76" y="31" width="5" height="3" rx="1.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </rect>
+    
+    <!-- Server 2 -->
+    <rect x="35" y="45" width="50" height="15" rx="3" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" />
+    <circle cx="42" cy="52.5" r="2.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <rect x="48" y="51" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="62" y="51" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="76" y="51" width="5" height="3" rx="1.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.7s" repeatCount="indefinite" />
+    </rect>
+    
+    <!-- Server 3 -->
+    <rect x="35" y="65" width="50" height="15" rx="3" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" />
+    <circle cx="42" cy="72.5" r="2.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <rect x="48" y="71" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="62" y="71" width="10" height="3" rx="1.5" fill="#e5e7eb" />
+    <rect x="76" y="71" width="5" height="3" rx="1.5" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.3s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  
+  <!-- Data Flow Animation -->
+  <g>
+    <!-- Down Flow -->
+    <circle cx="60" cy="15" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="15;40;15" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="60" cy="15" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="cy" values="15;40;15" dur="2s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    
+    <!-- Between Flow 1 -->
+    <circle cx="60" cy="40" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="40;60;40" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="60" cy="40" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="cy" values="40;60;40" dur="1.5s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    
+    <!-- Between Flow 2 -->
+    <circle cx="60" cy="60" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="60;80;60" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="60" cy="60" r="2" fill="#8b5cf6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="0.6s" />
+      <animate attributeName="cy" values="60;80;60" dur="1.8s" repeatCount="indefinite" begin="0.6s" />
+    </circle>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g opacity="0.6">
+    <line x1="25" y1="32.5" x2="35" y2="32.5" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="4s" repeatCount="indefinite" />
+    </line>
+    <line x1="25" y1="52.5" x2="35" y2="52.5" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="5s" repeatCount="indefinite" />
+    </line>
+    <line x1="25" y1="72.5" x2="35" y2="72.5" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="3s" repeatCount="indefinite" />
+    </line>
+  </g>
+  
+  <!-- Code Elements -->
+  <g transform="translate(95, 30)">
+    <g opacity="0.8">
+      <rect x="0" y="0" width="12" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="12;15;12" dur="4s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="3" width="10" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="10;13;10" dur="3s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="6" width="8" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="8;11;8" dur="5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+    
+    <g transform="translate(0, 30)" opacity="0.8">
+      <rect x="0" y="0" width="10" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="10;13;10" dur="5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="3" width="12" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="12;15;12" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="0" y="6" width="8" height="1.5" rx="0.75" fill="#8b5cf6">
+        <animate attributeName="width" values="8;11;8" dur="4.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+  
+  <!-- Database Icon -->
+  <g transform="translate(60, 95)">
+    <path d="M-15,-5 C-15,-10 0,-12 15,-12 C30,-12 45,-10 45,-5 L45,5 C45,10 30,12 15,12 C0,12 -15,10 -15,5 Z" fill="#f3f4f6" stroke="#8b5cf6" stroke-width="1.5" />
+    <path d="M-15,-5 C-15,0 0,2 15,2 C30,2 45,0 45,-5" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7" />
+    
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      from="60,95" 
+      to="60,92" 
+      dur="2s" 
+      repeatCount="indefinite" 
+      additive="sum" />
+  </g>
+</svg> 

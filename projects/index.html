@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GDevelopers - Projects</title>
+    <meta name="description" content="Explore the innovative projects developed by The GDevelopers team">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="The GDevelopers Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html" class="active">Projects</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="../team/index.html">Team</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact Us</a></li>
+                    <li>
+                        <button id="search-toggle" class="search-toggle" aria-label="Search website">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our <span class="highlight">Projects</span></h1>
+            <p>Explore our innovative solutions across various domains</p>
+        </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise Solutions</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project">
+        <div class="container">
+            <div class="featured-project-card" data-categories="mobile healthcare ai">
+                <div class="featured-project-content">
+                    <div class="featured-tag">Featured Project</div>
+                    <h2>SmartHealth App</h2>
+                    <p class="project-description">A comprehensive health monitoring application that uses artificial intelligence to provide personalized health insights and recommendations. The app tracks vital health metrics, analyzes patterns, and offers actionable advice to improve overall wellbeing.</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Cross-Platform</h4>
+                                <p>Available on iOS and Android</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>AI-Powered</h4>
+                                <p>Machine learning health insights</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Secure</h4>
+                                <p>HIPAA-compliant data security</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tags">
+                        <span>Mobile</span>
+                        <span>AI</span>
+                        <span>Healthcare</span>
+                        <span>React Native</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="project1.html" class="btn-primary">View Details</a>
+                        <a href="#" class="btn-secondary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="featured-project-image">
+                    <img src="../assets/images/project-placeholder-large.svg" alt="SmartHealth App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-grid-extended">
+                <div class="project-card" data-categories="web enterprise">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoTrack Platform</h3>
+                        <p>A sustainability platform that helps organizations track and reduce their environmental impact through data-driven insights.</p>
+                        <div class="project-tags">
+                            <span>Web</span>
+                            <span>Dashboard</span>
+                            <span>Environment</span>
+                        </div>
+                        <a href="project2.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="web saas">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>DevConnect</h3>
+                        <p>A collaboration tool for developers with real-time code sharing and communication features.</p>
+                        <div class="project-tags">
+                            <span>SaaS</span>
+                            <span>Collaboration</span>
+                            <span>Real-time</span>
+                        </div>
+                        <a href="project3.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="web enterprise">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>FinancePro</h3>
+                        <p>A comprehensive financial management solution for small businesses with invoicing, expense tracking, and reporting.</p>
+                        <div class="project-tags">
+                            <span>Fintech</span>
+                            <span>B2B</span>
+                            <span>Enterprise</span>
+                        </div>
+                        <a href="project4.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="web education">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>EduLearn</h3>
+                        <p>An interactive learning platform with personalized curriculum and progress tracking for students of all ages.</p>
+                        <div class="project-tags">
+                            <span>Education</span>
+                            <span>E-Learning</span>
+                            <span>Interactive</span>
+                        </div>
+                        <a href="project5.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="web ecommerce">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3>RetailX</h3>
+                        <p>A modern e-commerce platform with advanced inventory management and customer analytics features.</p>
+                        <div class="project-tags">
+                            <span>E-commerce</span>
+                            <span>Retail</span>
+                            <span>Analytics</span>
+                        </div>
+                        <a href="project6.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="mobile">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 7">
+                    </div>
+                    <div class="project-info">
+                        <h3>TravelBuddy</h3>
+                        <p>A smart travel companion app that helps users plan trips, discover local attractions, and connect with fellow travelers.</p>
+                        <div class="project-tags">
+                            <span>Travel</span>
+                            <span>Mobile</span>
+                            <span>Social</span>
+                        </div>
+                        <a href="project7.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="web mobile ai">
+                    <div class="project-image">
+                        <img src="../assets/images/project-placeholder.svg" alt="Project 8">
+                    </div>
+                    <div class="project-info">
+                        <h3>SmartHome Hub</h3>
+                        <p>An integrated solution for managing smart home devices with voice control and automation capabilities.</p>
+                        <div class="project-tags">
+                            <span>IoT</span>
+                            <span>Smart Home</span>
+                            <span>AI</span>
+                        </div>
+                        <a href="project8.html" class="btn-tertiary">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn-secondary">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Process -->
+    <section class="project-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Development <span class="highlight">Process</span></h2>
+                <p>How we transform ideas into successful products</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We begin by understanding your vision, goals, and requirements through in-depth discussions and research.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Our design team creates intuitive, user-centered interfaces and interactive prototypes for your feedback.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Our developers build your solution using modern technologies and best practices, with regular updates.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Testing & QA</h3>
+                        <p>Rigorous testing ensures your product is robust, secure, and provides an excellent user experience.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Deployment</h3>
+                        <p>We handle the launch process, ensuring a smooth transition to production environments.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Maintenance & Support</h3>
+                        <p>Our team provides ongoing support, updates, and enhancements to keep your product running optimally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's work together to bring your vision to life. Our team is ready to help you create innovative solutions that meet your goals.</p>
+                <a href="../index.html#contact" class="btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest projects, blog posts, and community events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <span class="highlight">The</span> GDevelopers
+                    </a>
+                    <p>Building the future through innovative software solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../projects/index.html">Projects</a></li>
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../team/index.html">Team</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Backend Solutions</a></li>
+                            <li><a href="#">Cloud Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The GDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <button id="search-close" class="search-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Search The GDevelopers</h2>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" class="search-input" placeholder="Type to search..." autocomplete="off">
+                <button type="submit" class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="search.js"></script>
+    <script src="../assets/js/project-filter.js"></script>
+    <script src="../assets/js/newsletter.js"></script>
+</body>
+</html> 

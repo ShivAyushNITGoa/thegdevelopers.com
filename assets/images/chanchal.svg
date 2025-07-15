@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#10b981" opacity="0.1" />
+  
+  <!-- Abstract Background Pattern -->
+  <path d="M0,200 L400,0 L400,400 L0,200 Z" fill="#10b981" opacity="0.1" />
+  <path d="M400,200 L0,0 L0,400 L400,200 Z" fill="#4f46e5" opacity="0.1" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="20" fill="#10b981" opacity="0.2" />
+  <circle cx="300" cy="100" r="15" fill="#4f46e5" opacity="0.2" />
+  <circle cx="100" cy="300" r="25" fill="#4f46e5" opacity="0.2" />
+  <circle cx="300" cy="300" r="30" fill="#10b981" opacity="0.2" />
+  
+  <!-- Person Silhouette - More Detailed -->
+  <circle cx="200" cy="140" r="70" fill="#10b981" opacity="0.6" />
+  
+  <!-- Hair -->
+  <path d="M140,110 C140,80 260,80 260,110 L260,140 C260,140 240,180 200,160 C160,180 140,140 140,140 Z" fill="#1f2937" />
+  
+  <!-- Face -->
+  <circle cx="200" cy="150" r="60" fill="#f3f4f6" />
+  
+  <!-- Eyes -->
+  <ellipse cx="175" cy="140" rx="8" ry="6" fill="#1f2937" />
+  <ellipse cx="225" cy="140" rx="8" ry="6" fill="#1f2937" />
+  
+  <!-- Eyebrows -->
+  <path d="M165,125 C165,125 175,122 185,125" stroke="#1f2937" stroke-width="2" fill="none" />
+  <path d="M215,125 C215,125 225,122 235,125" stroke="#1f2937" stroke-width="2" fill="none" />
+  
+  <!-- Smile -->
+  <path d="M180,170 C180,180 220,180 220,170" stroke="#1f2937" stroke-width="2" fill="none" />
+  
+  <!-- Nose -->
+  <path d="M195,145 C195,145 200,160 205,145" stroke="#1f2937" stroke-width="1.5" fill="none" />
+  
+  <!-- Shirt/Clothing -->
+  <path d="M120,400 L120,260 C120,230 170,210 200,210 C230,210 280,230 280,260 L280,400 Z" fill="#10b981" />
+  
+  <!-- Collar -->
+  <path d="M175,235 L200,260 L225,235" stroke="#ffffff" stroke-width="2" fill="none" />
+  
+  <!-- Additional details -->
+  <path d="M160,240 L200,280 L240,240" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.7" />
+  
+  <!-- Name -->
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Chanchal Saini</text>
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Partner</text>
+</svg> 
