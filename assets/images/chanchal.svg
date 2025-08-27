@@ -46,6 +46,6 @@
   <path d="M160,240 L200,280 L240,240" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.7" />
   
   <!-- Name -->
-  <text x="200" y="350" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Chanchal Saini</text>
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Shreya</text>
   <text x="200" y="375" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Partner</text>
 </svg> 
