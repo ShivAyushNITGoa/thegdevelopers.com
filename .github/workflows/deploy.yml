@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0   # ensures full history (required for gh-pages push)
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -18,7 +20,8 @@ jobs:
           node-version: 16
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
-          branch: gh-pages
-          folder: . 
+          branch: gh-pages          # target branch
+          folder: .                 # build output directory
+          token: ${{ secrets.GITHUB_TOKEN }}
